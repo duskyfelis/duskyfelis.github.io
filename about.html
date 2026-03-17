@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · duskyfelis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <script src="scripts/autoload.js"></script>
+</head>
+
+<body>
+    <div class="container">
+<!-- About page -->
+<div class="hero about-hero">
+    <div class="hero-icon-large"></div>
+    <h1>About me</h1>
+    <div class="subtitle">Developer, creator, problem solver</div>
+</div>
+        <!-- Simple Bio -->
+        <div class="about-section" style="margin: 3rem;">
+            <p style="font-size: 1.2rem; color: #d1d5db; margin-bottom: 1.5rem;margin: auto";>
+                I'm an amateur developer learning by building things. I focus on browser extensions and small tools that
+                solve real problems — no fluff, just useful stuff.
+            </p>
+            <p style="font-size: 1.2rem; color: #d1d5db;">
+                QR-Now is my first public project, and I'm excited to see where it goes.
+            </p>
+        </div>
+
+        <div class="featured-project-wrapper">
+            <h3 class="featured-project-heading">✨ Today's featured project</h3>
+
+            <div id="random-project" class="random-project-card">
+                <!-- Loading state -->
+                <div id="project-loading" class="project-loading-state">
+                    <div class="project-loading-icon">🎲</div>
+                    <div class="project-loading-text">Rolling the dice...</div>
+                </div>
+
+                <!-- Project content (hidden initially) -->
+                <div id="project-content" class="project-content-hidden">
+                    <div class="project-content-flex">
+                        <div id="project-emoji" class="project-emoji-large"></div>
+                        <div class="project-info-container">
+                            <div class="project-header-flex">
+                                <h4 id="project-name" class="project-name-heading"></h4>
+                                <span class="project-random-badge">random pick</span>
+                            </div>
+                            <p id="project-description" class="project-description-text"></p>
+                            <div class="project-buttons-flex">
+                                <a id="project-link" href="#" class="project-link-primary" target="">View project →</a>
+                                <a id="project-github" href="#" class="project-link-secondary" target="_blank">GitHub
+                                    →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative elements -->
+                <div class="random-project-decoration"></div>
+            </div>
+
+            <!-- Refresh button -->
+            <div class="refresh-button-container">
+                <button id="refresh-project" class="refresh-project-btn">
+                    🔄 Pick another
+                </button>
+            </div>
+        </div>
+
+        <!-- Other Projects (autoloaded) -->
+        <h2 class="section-title">Project Repository</h2>
+        <div class="projects-grid">
+            <!-- Projects will be loaded here by JavaScript -->
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

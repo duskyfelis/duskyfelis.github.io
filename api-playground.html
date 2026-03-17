@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Playground · duskyfelis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <script src="scripts/api-playground.js"></script>
+    <script src="scripts/autoload.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+<!-- API Playground page -->
+<div class="hero api-hero">
+    <div class="hero-icon-large">🔧</div>
+    <h1>API Playground</h1>
+    <div class="subtitle">Test REST APIs directly in your browser. No login required.</div>
+    <div class="hero-buttons">
+        <a href="https://github.com/duskyfelis/api-playground" class="hero-button hero-button-secondary">GitHub →</a>
+    </div>
+</div>
+
+        <!-- Live demo -->
+        <div class="demo-container">
+            <div class="request-bar">
+                <select class="method-select">
+                    <option>GET</option>
+                    <option>POST</option>
+                    <option>PUT</option>
+                    <option>DELETE</option>
+                    <option>PATCH</option>
+                    <option>HEAD</option>
+                </select>
+                <input type="text" class="url-input" value="https://api.github.com/users/duskyfelis" placeholder="https://api.example.com/endpoint">
+                <button class="send-button">Send</button>
+            </div>
+            
+            <div class="response-window">
+                <div class="response-header">
+                    <span>Response</span>
+                    <span class="status-success">200 OK</span>
+                </div>
+                <pre class="response-pre">{
+  "login": "duskyfelis",
+  "id": 12345678,
+  "avatar_url": "https://avatars.githubusercontent.com/u/12345678",
+  "name": "duskyfelis",
+  "company": null,
+  "blog": "https://duskyfelis.github.io",
+  "location": "Building things",
+  "email": null,
+  "bio": "Building browser extensions and tools",
+  "public_repos": 12,
+  "followers": 47,
+  "following": 23,
+  "created_at": "2023-01-15T10:30:00Z",
+  "updated_at": "2026-03-17T15:45:00Z"
+}</pre>
+            </div>
+        </div>
+
+        <!-- Example APIs -->
+        <h2 class="section-title">Try these</h2>
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="example-icon">🐙</div>
+                <div class="example-name">GitHub API</div>
+                <div class="example-desc">User data, repos, issues, pulls</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+            <div class="example-card">
+                <div class="example-icon">☁️</div>
+                <div class="example-name">Weather API</div>
+                <div class="example-desc">Current conditions, forecasts</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+            <div class="example-card">
+                <div class="example-icon">⚡</div>
+                <div class="example-name">Pokémon API</div>
+                <div class="example-desc">Pokédex, abilities, stats</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+            <div class="example-card">
+                <div class="example-icon">📦</div>
+                <div class="example-name">JSONPlaceholder</div>
+                <div class="example-desc">Fake posts, todos, users</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+            <div class="example-card">
+                <div class="example-icon">💰</div>
+                <div class="example-name">CoinGecko</div>
+                <div class="example-desc">Crypto prices, markets</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+            <div class="example-card">
+                <div class="example-icon">📺</div>
+                <div class="example-name">TVmaze</div>
+                <div class="example-desc">TV shows, episodes, schedules</div>
+                <a href="#" class="example-link">Try example</a>
+            </div>
+        </div>
+
+        <!-- Features in depth -->
+        <h2 class="section-title">What you can do</h2>
+        <div class="api-features-grid">
+            <div class="api-feature-card">
+                <div class="api-feature-icon">🔄</div>
+                <div class="api-feature-title">Any Method</div>
+                <div class="api-feature-desc">GET, POST, PUT, DELETE — whatever you need.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">📋</div>
+                <div class="api-feature-title">Copy Ready</div>
+                <div class="api-feature-desc">Get cURL commands, copy to clipboard.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">📤</div>
+                <div class="api-feature-title">Custom headers</div>
+                <div class="api-feature-desc">Add authentication, content types, or any custom headers to your requests.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">📦</div>
+                <div class="api-feature-title">Request body</div>
+                <div class="api-feature-desc">Send JSON, form data, or plain text with POST/PUT requests.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">🔗</div>
+                <div class="api-feature-title">📚 Built-in examples</div>
+                <div class="api-feature-desc">Try popular APIs — GitHub, Weather, Pokémon — with one click.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">🔗</div>
+                <div class="api-feature-title">🔍 Debug responses</div>
+                <div class="api-feature-desc">See formatted JSON, headers, and status codes instantly. Spot issues fast.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">🔗</div>
+                <div class="api-feature-title">Query parameters</div>
+                <div class="api-feature-desc">Build URLs with parameters using the visual editor.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">📋</div>
+                <div class="api-feature-title">History</div>
+                <div class="api-feature-desc">Previous requests are saved locally for quick reuse.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">⬇️</div>
+                <div class="api-feature-title">Export</div>
+                <div class="api-feature-desc">Download responses or copy as cURL, fetch, or Python requests.</div>
+            </div>
+            <div class="api-feature-card">
+                <div class="api-feature-icon">🎨</div>
+                <div class="api-feature-title">Pretty print</div>
+                <div class="api-feature-desc">Auto-formatted JSON with syntax highlighting.</div>
+            </div>
+        </div>
+
+        <!-- Request methods table -->
+        <div style="background: rgba(20, 20, 25, 0.7); backdrop-filter: blur(10px); border-radius: 1.5rem; padding: 2rem; border: 1px solid rgba(168, 85, 247, 0.1); margin: 4rem 0;">
+            <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.5rem;">Supported methods</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem;">
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #a855f7; font-weight: 600;">GET</span>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #3b82f6; font-weight: 600;">POST</span>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #f59e0b; font-weight: 600;">PUT</span>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #ef4444; font-weight: 600;">DELETE</span>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #10b981; font-weight: 600;">PATCH</span>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); padding: 0.75rem; border-radius: 0.75rem; text-align: center; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <span style="color: #8b5cf6; font-weight: 600;">HEAD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

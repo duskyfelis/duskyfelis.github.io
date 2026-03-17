@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tool · Formatter & Validator · duskyfelis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <script src="scripts/autoload.js"></script>
+    <script src="scripts/json-tool.js"></script>
+
+</head>
+<body>
+<!-- JSON Tool page -->
+<div class="hero json-hero">
+    <div class="hero-icon-large">📊</div>
+    <h1>JSON Tools</h1>
+    <div class="subtitle">Format, validate, and minify JSON instantly in your browser.</div>
+    <div class="hero-buttons">
+        <a href="https://github.com/duskyfelis/json-tools" class="hero-button hero-button-secondary">GitHub →</a>
+    </div>
+</div>
+
+<div class="container">
+        <!-- Quick features -->
+        <div class="features-mini-grid">
+            <div class="feature-mini-card">
+                <div class="feature-mini-icon">✨</div>
+                <div class="feature-mini-title">Pretty Print</div>
+                <div class="feature-mini-desc">Format messy JSON with proper indentation</div>
+            </div>
+            <div class="feature-mini-card">
+                <div class="feature-mini-icon">✅</div>
+                <div class="feature-mini-title">Validate</div>
+                <div class="feature-mini-desc">Check if your JSON is valid, see errors</div>
+            </div>
+            <div class="feature-mini-card">
+                <div class="feature-mini-icon">📋</div>
+                <div class="feature-mini-title">Copy & Paste</div>
+                <div class="feature-mini-desc">Easy clipboard support, clear buttons</div>
+            </div>
+        </div>
+
+        
+
+        <!-- Settings -->
+        <div class="settings-panel">
+            <div class="settings-item">
+                <span class="settings-label">Indent size:</span>
+                <select id="indentSize" class="settings-select">
+                    <option value="2">2 spaces</option>
+                    <option value="4" selected>4 spaces</option>
+                    <option value="tab">Tab</option>
+                </select>
+            </div>
+            <div class="settings-item">
+                <span class="settings-label">Real-time validation:</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="realtimeToggle" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+        <!-- Main tool -->
+        <div class="tool-container">
+            <div class="tool-header">
+                <div class="tool-title">JSON Workbench</div>
+                <div class="tool-actions">
+                    <button class="tool-button" id="formatBtn">✨ Format</button>
+                    <button class="tool-button" id="validateBtn">✅ Validate</button>
+                    <button class="tool-button" id="minifyBtn">📦 Minify</button>
+                    <button class="tool-button" id="clearBtn">🗑️ Clear</button>
+                </div>
+            </div>
+
+            <div class="json-grid">
+                <!-- Input panel -->
+                <div class="json-panel">
+                    <div class="json-panel-header">
+                        <div class="json-panel-title">
+                            <span>📝</span> Input JSON
+                        </div>
+                        <div class="json-panel-actions">
+                            <button class="json-panel-button" id="pasteBtn" title="Paste from clipboard">📋</button>
+                            <button class="json-panel-button" id="clearInputBtn" title="Clear input">🗑️</button>
+                        </div>
+                    </div>
+                    <textarea id="jsonInput" class="json-textarea" placeholder='Paste your JSON here...&#10;&#10;Example:&#10;{"name": "duskyfelis", "projects": ["QR-Now", "API Playground"]}'></textarea>
+                </div>
+
+                <!-- Output panel -->
+                <div class="json-panel">
+                    <div class="json-panel-header">
+                        <div class="json-panel-title">
+                            <span>🎨</span> Formatted Output
+                            <span class="json-panel-badge" id="outputBadge">waiting</span>
+                        </div>
+                        <div class="json-panel-actions">
+                            <button class="json-panel-button" id="copyBtn" title="Copy to clipboard">📋</button>
+                        </div>
+                    </div>
+                    <div id="jsonOutput" class="json-output"></div>
+                </div>
+            </div>
+
+            <!-- Status bar -->
+            <div class="status-bar">
+                <div id="statusIndicator" class="status-valid">Ready</div>
+                <div id="statusMessage" class="status-message">Paste or type JSON to begin</div>
+            </div>
+        </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="charCount">0</div>
+                        <div class="stat-label">characters</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="lineCount">0</div>
+                        <div class="stat-label">lines</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="jsonSize">0 B</div>
+                        <div class="stat-label">size</div>
+                    </div>
+                </div>
+
+        <!-- Examples -->
+        <h2 class="section-title">Try an example</h2>
+        <div class="examples-mini-grid">
+            <div class="example-mini-card" data-example="user">
+                <div class="example-mini-icon">👤</div>
+                <div class="example-mini-name">User Profile</div>
+                <div class="example-mini-desc">Simple user object</div>
+            </div>
+            <div class="example-mini-card" data-example="products">
+                <div class="example-mini-icon">🛒</div>
+                <div class="example-mini-name">Products</div>
+                <div class="example-mini-desc">Array of items</div>
+            </div>
+            <div class="example-mini-card" data-example="nested">
+                <div class="example-mini-icon">🗂️</div>
+                <div class="example-mini-name">Nested Data</div>
+                <div class="example-mini-desc">Complex structure</div>
+            </div>
+            <div class="example-mini-card" data-example="api">
+                <div class="example-mini-icon">🌐</div>
+                <div class="example-mini-name">API Response</div>
+                <div class="example-mini-desc">Typical API reply</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
