@@ -1,4 +1,2 @@
 User-agent: *
 Disallow:
-
-Sitemap: https://duskyfelis.github.io/sitemap.xml
