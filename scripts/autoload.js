@@ -121,8 +121,19 @@ function initFooter() {
                 { text: 'GitHub', url: 'https://github.com/duskyfelis' },
                 { text: 'About', url: 'about.html' }
             ]
+        },
+
+        '404.html': {
+            note: "You've met with a terrible fate, haven't you?",
+            links: [
+                { text: 'Home', url: '/' },
+                { text: 'GitHub', url: 'https://github.com/duskyfelis' },
+                { text: 'About', url: 'about.html' }
+            ]
         }
     };
+
+
     
     // Get config for current page or use default
     const config = footerConfig[currentPage] || footerConfig.default;
