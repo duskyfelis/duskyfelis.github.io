@@ -2,80 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://duskyfelis.github.io/</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://duskyfelis.github.io/about.html</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/qr-now.html</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://duskyfelis.github.io/sitemap.xml</loc>
   </url>
   <url>
     <loc>https://duskyfelis.github.io/api-playground.html</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/json-tool.html</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://duskyfelis.github.io/colour-palette.html</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/scripts/json-tool.js</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/scripts/autoload.js</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/scripts/api-playground.js</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://duskyfelis.github.io/scripts/colour-palette.js</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://duskyfelis.github.io/favicon.ico</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://duskyfelis.github.io/styles.css</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://duskyfelis.github.io/json-tool.html</loc>
+  </url>
+  <url>
+    <loc>https://duskyfelis.github.io/scripts/api-playground.js</loc>
+  </url>
+  <url>
+    <loc>https://duskyfelis.github.io/scripts/autoload.js</loc>
+  </url>
+  <url>
+    <loc>https://duskyfelis.github.io/scripts/colour-palette.js</loc>
+  </url>
+  <url>
+    <loc>https://duskyfelis.github.io/scripts/json-tool.js</loc>
   </url>
   <url>
     <loc>https://duskyfelis.github.io/scripts/robots.txt</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://duskyfelis.github.io/styles.css</loc>
   </url>
 </urlset>
